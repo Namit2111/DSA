@@ -1,6 +1,10 @@
 import os
 import sys
+
+# Add Stack directory for model import
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+# Add DSA directory for test_helper import
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 
 from model import Stack
 from test_helper import run_tests
