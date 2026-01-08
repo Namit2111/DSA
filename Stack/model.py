@@ -20,6 +20,12 @@ class Stack:
             return None
         return self.items[-1]
 
+    def peek_n(self,i):
+        if self.is_empty():
+            print("Stack is empty")
+            return None
+        return self.items[i]
+
     def get(self):
         return self.items
 
